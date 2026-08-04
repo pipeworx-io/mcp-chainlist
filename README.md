@@ -1,16 +1,18 @@
-# mcp-chainlist
+# @pipeworx/chainlist
 
-Chainlist MCP — registry of EVM chains
+Chainlist MCP — registry of EVM chains with RPC URLs, chain IDs, native currency, explorers, faucets. Sourced from chainid.network. No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `list_chains` | Browse or filter the EVM chain registry. |
-| `get_chain` | Fetch a single chain by chainId (number) or shortName (e.g. "eth", "matic", "arb1"). |
-| `find_rpc` | Return RPC endpoints for a chain. https_only=true filters out ws:// + http:// only. |
+- `list_chains(testnet?, name?)` — browse / search the chain list
+- `get_chain(chain_id_or_short_name)` — full chain record by chainId or shortName
+- `find_rpc(chain_id_or_short_name, https_only?)` — RPC URLs for a given chain
+
+## Data source
+
+`https://chainid.network/chains.json` — community-maintained list (also mirrored at chainlist.org).
 
 ## Quick Start
 
@@ -26,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -50,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
