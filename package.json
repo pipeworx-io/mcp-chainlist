@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-chainlist",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Chainlist MCP — registry of EVM chains",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-48aeabd3cfc4186f6be39a957f757a1648b9e262d60fb05eb242b867807e3deb",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-6deec86baa920cb1a41bc6067d24eea33014cb398b4e45f0b8a4b527bb482d3b",
+    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
   }
 }
